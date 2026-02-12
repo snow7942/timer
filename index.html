@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weniv Timer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="img/weniv-logo.svg" alt="weniv">
+  </div>
+  
+  <div class="timer-container" id="timerContainer">
+    <h1 class="timer-title">TIMER</h1>
+    
+    <div class="timer-labels">
+      <span class="timer-label">HRS</span>
+      <span class="timer-label">MIN</span>
+      <span class="timer-label">SEC</span>
+    </div>
+    
+    <div class="timer-display">
+      <div class="time-box">
+        <input type="number" id="hours" class="time-input" value="00" min="0" max="99">
+      </div>
+      <span class="colon">:</span>
+      <div class="time-box">
+        <input type="number" id="minutes" class="time-input" value="00" min="0" max="59">
+      </div>
+      <span class="colon">:</span>
+      <div class="time-box">
+        <input type="number" id="seconds" class="time-input" value="00" min="0" max="59">
+      </div>
+    </div>
+    
+    <div class="button-container">
+      <button class="btn btn-start" id="startBtn">
+        <img src="img/icon-start.png" alt="" class="btn-icon" id="startIcon">
+        <span id="startBtnText">START</span>
+      </button>
+      <button class="btn btn-reset" id="resetBtn">
+        <img src="img/icon-reset.png" alt="" class="btn-icon" id="resetIcon">
+        <span>RESET</span>
+      </button>
+    </div>
+  </div>
+  
+  <footer class="footer">© WENIV CORP.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
